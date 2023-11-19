@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,7 @@
 		88C9AB7D2B095A82007CF170 /* NetworkService in Frameworks */ = {isa = PBXBuildFile; productRef = 88C9AB7C2B095A82007CF170 /* NetworkService */; };
 		88C9AB7F2B095B43007CF170 /* NetworkService in Frameworks */ = {isa = PBXBuildFile; productRef = 88C9AB7E2B095B43007CF170 /* NetworkService */; };
 		88C9AB812B095BB0007CF170 /* NetworkService in Frameworks */ = {isa = PBXBuildFile; productRef = 88C9AB802B095BB0007CF170 /* NetworkService */; };
+		88C9AB882B0A8A4A007CF170 /* NetworkService in Frameworks */ = {isa = PBXBuildFile; productRef = 88C9AB872B0A8A4A007CF170 /* NetworkService */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88C9AB7D2B095A82007CF170 /* NetworkService in Frameworks */,
+				88C9AB882B0A8A4A007CF170 /* NetworkService in Frameworks */,
 				88C9AB7F2B095B43007CF170 /* NetworkService in Frameworks */,
 				88C9AB812B095BB0007CF170 /* NetworkService in Frameworks */,
 			);
@@ -126,6 +128,7 @@
 				88C9AB7C2B095A82007CF170 /* NetworkService */,
 				88C9AB7E2B095B43007CF170 /* NetworkService */,
 				88C9AB802B095BB0007CF170 /* NetworkService */,
+				88C9AB872B0A8A4A007CF170 /* NetworkService */,
 			);
 			productName = FatctsAboutCatsWithApi;
 			productReference = 88C9AB562B092F5E007CF170 /* FatctsAboutCatsWithApi.app */;
@@ -156,7 +159,7 @@
 			);
 			mainGroup = 88C9AB4D2B092F5E007CF170;
 			packageReferences = (
-				88C9AB7B2B095A82007CF170 /* XCLocalSwiftPackageReference "../NetworkService" */,
+				88C9AB862B0A8A4A007CF170 /* XCRemoteSwiftPackageReference "network-service-package" */,
 			);
 			productRefGroup = 88C9AB572B092F5E007CF170 /* Products */;
 			projectDirPath = "";
@@ -404,12 +407,16 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		88C9AB7B2B095A82007CF170 /* XCLocalSwiftPackageReference "../NetworkService" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../NetworkService;
+/* Begin XCRemoteSwiftPackageReference section */
+		88C9AB862B0A8A4A007CF170 /* XCRemoteSwiftPackageReference "network-service-package" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sofoetno/network-service-package";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
 		};
-/* End XCLocalSwiftPackageReference section */
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		88C9AB7C2B095A82007CF170 /* NetworkService */ = {
@@ -422,6 +429,11 @@
 		};
 		88C9AB802B095BB0007CF170 /* NetworkService */ = {
 			isa = XCSwiftPackageProductDependency;
+			productName = NetworkService;
+		};
+		88C9AB872B0A8A4A007CF170 /* NetworkService */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88C9AB862B0A8A4A007CF170 /* XCRemoteSwiftPackageReference "network-service-package" */;
 			productName = NetworkService;
 		};
 /* End XCSwiftPackageProductDependency section */
