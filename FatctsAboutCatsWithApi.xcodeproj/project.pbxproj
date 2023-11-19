@@ -20,6 +20,12 @@
 		88C9AB7F2B095B43007CF170 /* NetworkService in Frameworks */ = {isa = PBXBuildFile; productRef = 88C9AB7E2B095B43007CF170 /* NetworkService */; };
 		88C9AB812B095BB0007CF170 /* NetworkService in Frameworks */ = {isa = PBXBuildFile; productRef = 88C9AB802B095BB0007CF170 /* NetworkService */; };
 		88C9AB882B0A8A4A007CF170 /* NetworkService in Frameworks */ = {isa = PBXBuildFile; productRef = 88C9AB872B0A8A4A007CF170 /* NetworkService */; };
+		88C9AB8A2B0A9752007CF170 /* BreedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C9AB892B0A9752007CF170 /* BreedsViewController.swift */; };
+		88C9AB8C2B0A9787007CF170 /* BreedsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C9AB8B2B0A9787007CF170 /* BreedsCell.swift */; };
+		88C9AB8E2B0A9821007CF170 /* BreedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C9AB8D2B0A9821007CF170 /* BreedModel.swift */; };
+		88C9AB902B0A98B4007CF170 /* BreedDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C9AB8F2B0A98B4007CF170 /* BreedDataModel.swift */; };
+		88C9AB922B0A9917007CF170 /* BreedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C9AB912B0A9917007CF170 /* BreedViewModel.swift */; };
+		88C9AB942B0AB97F007CF170 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C9AB932B0AB97F007CF170 /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +40,12 @@
 		88C9AB6F2B0935C9007CF170 /* CatFactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFactViewModel.swift; sourceTree = "<group>"; };
 		88C9AB712B0937B6007CF170 /* CatFactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFactCell.swift; sourceTree = "<group>"; };
 		88C9AB752B094763007CF170 /* CatFactDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFactDataModel.swift; sourceTree = "<group>"; };
+		88C9AB892B0A9752007CF170 /* BreedsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsViewController.swift; sourceTree = "<group>"; };
+		88C9AB8B2B0A9787007CF170 /* BreedsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsCell.swift; sourceTree = "<group>"; };
+		88C9AB8D2B0A9821007CF170 /* BreedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedModel.swift; sourceTree = "<group>"; };
+		88C9AB8F2B0A98B4007CF170 /* BreedDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedDataModel.swift; sourceTree = "<group>"; };
+		88C9AB912B0A9917007CF170 /* BreedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedViewModel.swift; sourceTree = "<group>"; };
+		88C9AB932B0AB97F007CF170 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +99,8 @@
 			children = (
 				88C9AB6D2B093437007CF170 /* CatFactModel.swift */,
 				88C9AB752B094763007CF170 /* CatFactDataModel.swift */,
+				88C9AB8D2B0A9821007CF170 /* BreedModel.swift */,
+				88C9AB8F2B0A98B4007CF170 /* BreedDataModel.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -95,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				88C9AB6F2B0935C9007CF170 /* CatFactViewModel.swift */,
+				88C9AB912B0A9917007CF170 /* BreedViewModel.swift */,
 			);
 			path = viewModels;
 			sourceTree = "<group>";
@@ -103,7 +118,10 @@
 			isa = PBXGroup;
 			children = (
 				88C9AB712B0937B6007CF170 /* CatFactCell.swift */,
+				88C9AB8B2B0A9787007CF170 /* BreedsCell.swift */,
 				88C9AB5D2B092F5E007CF170 /* FactListViewController.swift */,
+				88C9AB892B0A9752007CF170 /* BreedsViewController.swift */,
+				88C9AB932B0AB97F007CF170 /* TabBarViewController.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -188,10 +206,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				88C9AB702B0935C9007CF170 /* CatFactViewModel.swift in Sources */,
+				88C9AB922B0A9917007CF170 /* BreedViewModel.swift in Sources */,
+				88C9AB8A2B0A9752007CF170 /* BreedsViewController.swift in Sources */,
 				88C9AB5E2B092F5E007CF170 /* FactListViewController.swift in Sources */,
+				88C9AB902B0A98B4007CF170 /* BreedDataModel.swift in Sources */,
 				88C9AB762B094763007CF170 /* CatFactDataModel.swift in Sources */,
+				88C9AB8E2B0A9821007CF170 /* BreedModel.swift in Sources */,
+				88C9AB8C2B0A9787007CF170 /* BreedsCell.swift in Sources */,
 				88C9AB722B0937B6007CF170 /* CatFactCell.swift in Sources */,
 				88C9AB5A2B092F5E007CF170 /* AppDelegate.swift in Sources */,
+				88C9AB942B0AB97F007CF170 /* TabBarViewController.swift in Sources */,
 				88C9AB6E2B093437007CF170 /* CatFactModel.swift in Sources */,
 				88C9AB5C2B092F5E007CF170 /* SceneDelegate.swift in Sources */,
 			);

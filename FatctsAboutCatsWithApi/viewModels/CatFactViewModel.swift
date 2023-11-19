@@ -15,6 +15,7 @@ final class CatFactViewModel {
         catFacts.count
     }
     
+
     func getSingleCatFact(index: Int) -> CatFactModel {
         catFacts[index]
     }
